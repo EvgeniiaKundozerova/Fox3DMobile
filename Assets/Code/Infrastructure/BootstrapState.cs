@@ -27,7 +27,7 @@ namespace Code.Infrastructure
             Game.InputService = RegisterInputService();
         }
 
-        private IInputService RegisterInputService()
+        private static IInputService RegisterInputService()
         {
             if (Application.isEditor)
                 return new StandaloneInputService();
