@@ -5,7 +5,7 @@ namespace Code.Infrastructure
 {
     public class BootstrapState : IState
     {
-        private const string Initialscene = "InitialScene";
+        private const string InitialScene = "InitialScene";
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
 
@@ -18,7 +18,7 @@ namespace Code.Infrastructure
         public void Enter()
         {
             RegisterServices();
-            _sceneLoader.Load(Initialscene, onLoaded: EnterLoadLevel);
+            _sceneLoader.Load(InitialScene, onLoaded: EnterLoadLevel);
         }
 
         private void EnterLoadLevel() => 
