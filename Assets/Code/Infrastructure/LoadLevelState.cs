@@ -1,6 +1,9 @@
+using Code.CameraLogic;
+using UnityEngine;
+
 namespace Code.Infrastructure
 {
-    public class LoadLevelState : IState
+    public class LoadLevelState : IPayloadedState<string>
     {
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
@@ -11,14 +14,30 @@ namespace Code.Infrastructure
             _sceneLoader = sceneLoader;
         }
 
-        public void Enter()
-        {
-            _sceneLoader.Load("BattleScene");
-        }
+        public void Enter(string sceneName) => 
+            _sceneLoader.Load(sceneName, OnLoaded);
 
         public void Exit()
         {
             
+        }
+
+        private void OnLoaded()
+        {
+            GameObject hero = Instantiate("Hero/Hero");
+            Instantiate("Hud/Hud");
+            
+            CameraFollow(hero);
+        }
+        
+        private void CameraFollow(GameObject hero) => 
+            Camera.main.GetComponent<CameraFollow>().Follow(hero);
+
+
+        private static GameObject Instantiate(string path)
+        {
+            var prefab = Resources.Load<GameObject>(path);
+            return Object.Instantiate(prefab);
         }
     }
 }

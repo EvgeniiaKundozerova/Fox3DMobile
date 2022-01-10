@@ -22,7 +22,7 @@ namespace Code.Infrastructure
         }
 
         private void EnterLoadLevel() => 
-            _gameStateMachine.Enter<LoadLevelState>();
+            _gameStateMachine.Enter<LoadLevelState, string>("BattleScene");
 
         public void Exit()
         {
