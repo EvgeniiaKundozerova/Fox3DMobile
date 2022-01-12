@@ -3,6 +3,7 @@ using Code.Infrastructure.Factory;
 using Code.Infrastructure.Services;
 using Code.Infrastructure.Services.Input;
 using Code.Infrastructure.Services.PersistentProgress;
+using Code.Infrastructure.Services.SaveLoad;
 using UnityEngine;
 
 namespace Code.Infrastructure.States
@@ -34,7 +35,7 @@ namespace Code.Infrastructure.States
         }
 
         private void EnterLoadLevel() => 
-            _gameStateMachine.Enter<LoadLevelState, string>("BattleScene");
+            _gameStateMachine.Enter<LoadProgressState>();
 
         private void RegisterServices()
         {
@@ -42,6 +43,7 @@ namespace Code.Infrastructure.States
             _allServices.RegisterSingle<IAssetProvider>(new AssetProvider());
             _allServices.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
             _allServices.RegisterSingle<IGameFactory>(new GameFactory(_allServices.Single<IAssetProvider>()));
+            _allServices.RegisterSingle<ISaveLoadService>(new SaveLoadService(_allServices.Single<IPersistentProgressService>(), _allServices.Single<IGameFactory>()));
         }
 
         private static IInputService InputService()

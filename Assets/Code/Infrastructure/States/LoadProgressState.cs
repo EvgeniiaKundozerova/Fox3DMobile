@@ -17,13 +17,14 @@ namespace Code.Infrastructure.States
             _saveLoadService = saveLoadService;
         }
 
-        public void Exit()
+        public void Enter()
         {
             LoadProgressOrInitNew();
+            
             _gameStateMachine.Enter<LoadLevelState, string>(_progressService.Progress.WorldData.PositionOnLevel.Level);
         }
 
-        public void Enter()
+        public void Exit()
         {
         }
 
