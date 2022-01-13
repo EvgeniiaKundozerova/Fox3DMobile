@@ -28,7 +28,7 @@ namespace Code.Logic
             if (!Collider)
                 return;
             
-            Gizmos.color = new Color(30, 200, 30, 130);
+            Gizmos.color = new Color(30, 200, 30, 10);
             Gizmos.DrawCube(transform.position + Collider.center, Collider.size);
         }
     }

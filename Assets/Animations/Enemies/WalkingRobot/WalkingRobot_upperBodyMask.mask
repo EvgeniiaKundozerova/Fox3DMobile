@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WalkingRobot_upperBodyMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Lupilo_mesh
+    m_Weight: 0
+  - m_Path: Lupilo_tentacles
+    m_Weight: 0
+  - m_Path: Root
+    m_Weight: 0
+  - m_Path: Root/Hips
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_L_0
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_L_0/leg_L_1
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_L_0/leg_L_1/leg_L_2
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_L_0/leg_L_1/leg_L_2/leg_L_3
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_L_0/leg_L_1/leg_L_2/leg_L_3/leg_L_4
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_R_0
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_R_0/leg_R_1
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_R_0/leg_R_1/leg_R_2
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_R_0/leg_R_1/leg_R_2/leg_R_3
+    m_Weight: 0
+  - m_Path: Root/Hips/leg_R_0/leg_R_1/leg_R_2/leg_R_3/leg_R_4
+    m_Weight: 0
+  - m_Path: Root/Hips/spine_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/antenna_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/antenna_1/antenna_2
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L/finger_L_1_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L/finger_L_1_1/finger_L_1_2
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L/finger_L_1_1/finger_L_1_2/finger_L_1_3
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L/finger_L_2_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L/finger_L_2_1/finger_L_2_2
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/hand_L/finger_L_2_1/finger_L_2_2/finger_L_2_3
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/lowerarm_L_twist
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/lowerarm_L/lowerarm_L_twist/lowerarm_L_detail_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_L/upperarm_L/upperarm_L_detail_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06/tentA_07
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06/tentA_07/tentA_08
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06/tentA_07/tentA_08/tentA_09
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06/tentA_07/tentA_08/tentA_09/tentA_10
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06/tentA_07/tentA_08/tentA_09/tentA_10/tentA_11
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentA_01/tentA_02/tentA_03/tentA_04/tentA_05/tentA_06/tentA_07/tentA_08/tentA_09/tentA_10/tentA_11/tentA_12
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01/tentB_02
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01/tentB_02/tentB_03
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01/tentB_02/tentB_03/tentB_04
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01/tentB_02/tentB_03/tentB_04/tentB_05
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01/tentB_02/tentB_03/tentB_04/tentB_05/tentB_06
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentB_01/tentB_02/tentB_03/tentB_04/tentB_05/tentB_06/tentB_07
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentC_01
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentC_01/tentC_02
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentC_01/tentC_02/tentC_03
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/tentC_01/tentC_02/tentC_03/tentC_04
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/upperarm_R_detail_1
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/Clavicle_R/upperarm_R/upperarm_R_detail_2
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/neck
+    m_Weight: 1
+  - m_Path: Root/Hips/spine_1/spine_2/spine_3/neck/head
+    m_Weight: 1
