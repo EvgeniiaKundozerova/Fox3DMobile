@@ -186,26 +186,6 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.548
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
---- !u!1 &43309206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5153702685293124718, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
-    type: 3}
-  m_PrefabInstance: {fileID: 2113226429}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &43309214
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43309206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 1.659006
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.83, z: 0}
 --- !u!1001 &1129372539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -510,6 +490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152336964426993361, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: Cooldown
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27, type: 3}

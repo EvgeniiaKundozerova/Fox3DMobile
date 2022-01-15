@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5552665724670126201}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: upperarm_L_detail_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 215334025642051500}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentC_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,6 +61,63 @@ Transform:
   m_Father: {fileID: 71916479137278757}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &384517669612246738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8748869257414527952}
+  - component: {fileID: 5521795720241594714}
+  - component: {fileID: 6887720535575672543}
+  m_Layer: 13
+  m_Name: AggroZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8748869257414527952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384517669612246738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.71428573, y: 0.71428573, z: 0.71428573}
+  m_Children: []
+  m_Father: {fileID: 8205268875005750909}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &5521795720241594714
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384517669612246738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6887720535575672543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384517669612246738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc95ec646df4ef08849598baee1aaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &471276258944293261
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,7 +127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3686642274266237733}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8475819503741888443}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6903470067094388527}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentC_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2079619842002858692}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6629341627694484577}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 71916479137278757}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentC_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145817084189618068}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 354259102748408834}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: spine_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6692335969788159308}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7473730463105038927}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1486162671587046839}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: antenna_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7115793525830602707}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5179937959893558286}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405544764912745383}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7380799297990430343}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2455752128443977262}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3809545237923234326}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7739129258037062805}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: spine_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8027530839485325683}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: finger_L_1_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2159893886990240048}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentC_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8170016566319181006}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: finger_L_1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6227311913001297766}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_L_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8837751839320722170}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Clavicle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6703186692876014592}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6180821038123273753}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: upperarm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2631819479060088862}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375335973184740816}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6920020640816273931}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: lowerarm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1687078646641593812}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +1024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5705431681857695505}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: upperarm_R_detail_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +1054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6223402966798736423}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_R_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2245677441136202552}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3010492727391853045}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7855158464889222075}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 599900942533619878}
   - component: {fileID: 4001489810090183348}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Lupilo_tentacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9104253637803272827}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: spine_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1261,7 +1318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7948121842319721136}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1355,9 @@ GameObject:
   - component: {fileID: 8922612348787779675}
   - component: {fileID: 6043810107642644377}
   - component: {fileID: 5218393890927379392}
-  m_Layer: 13
+  - component: {fileID: 43309214}
+  - component: {fileID: 9152336964426993361}
+  m_Layer: 0
   m_Name: WalkingRobotPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,6 +1378,7 @@ Transform:
   - {fileID: 8158488365515708814}
   - {fileID: 599900942533619878}
   - {fileID: 7948121842319721136}
+  - {fileID: 8748869257414527952}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1418,6 +1478,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 4530103725004689843}
   EnemyAnimator: {fileID: 8922612348787779675}
+  MaxDistanceToGround: 0.4
+--- !u!136 &43309214
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5153702685293124718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1.659006
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.83, z: 0}
+--- !u!114 &9152336964426993361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5153702685293124718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1feed6f1c2242e18801ec8ec9b13e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerObserver: {fileID: 6887720535575672543}
+  Follow: {fileID: 6043810107642644377}
 --- !u!1 &5247341797531105544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,7 +1516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 342756927728296920}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: lowerarm_L_twist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1458,7 +1547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036675757285819373}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 668519275815738629}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_L_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1520,9 +1609,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6949204769327222060}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Hips
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1553,7 +1642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2446542541654804748}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: antenna_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,7 +1673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1513351201187350522}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1615,7 +1704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20828596293108140}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: upperarm_R_detail_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1645,7 +1734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1719033112459282860}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: finger_L_2_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1675,7 +1764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4123515345471775111}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1706,7 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7063556203085669613}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: finger_L_2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1737,7 +1826,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429837211972798570}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Clavicle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1768,7 +1857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938439456525224405}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_R_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,7 +1888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6133256064431800577}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: finger_L_1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1830,7 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6812350361923332812}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: finger_L_2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1861,7 +1950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6190271533164071628}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentA_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1892,7 +1981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1587381527333630006}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: tentB_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1922,7 +2011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1906520541675363063}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +2043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8097994743309824619}
   - component: {fileID: 8097994743309824618}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Point Light Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2047,7 +2136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8097994743472681978}
   - component: {fileID: 8097994743472681973}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Point Light Eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2139,7 +2228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523527068278784606}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: upperarm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2174,7 +2263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3950777350004857582}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: lowerarm_L_detail_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2204,7 +2293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1113851328052543631}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: leg_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2235,7 +2324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448017304123989507}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,7 +2356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8158488365515708814}
   - component: {fileID: 8333286569435379697}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Lupilo_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}

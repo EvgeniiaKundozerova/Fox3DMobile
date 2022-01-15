@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - InitialPoint
-  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -19,8 +18,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
+  - Aggro
   - 
   - 
   - 
