@@ -8,7 +8,7 @@ namespace Code.Enemy
 {
     public class AgentMoveToHero : Follow
     {
-        private const float MinimalDistance = 1;
+        private const float MinimalDistance = 3f;
 
         public NavMeshAgent Agent;
 
@@ -41,6 +41,9 @@ namespace Code.Enemy
             _heroTransform != null;
 
         private bool HeroNotReached() =>
-            Vector3.Distance(Agent.transform.position, _heroTransform.position) >= MinimalDistance;
+            DistanceToTarget() >= MinimalDistance;
+
+        private float DistanceToTarget() => 
+            Vector3.Distance(Agent.transform.position, _heroTransform.position);
     }
 }

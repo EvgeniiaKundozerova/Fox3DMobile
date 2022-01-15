@@ -15,46 +15,48 @@ namespace Code.Enemy
         private void Start()
         {
             TriggerObserver.TriggerEnter += TriggerEnter;
-            TriggerObserver.TriggerExit += TriggerExit;
+            //TriggerObserver.TriggerExit += TriggerExit;
 
             SwitchFollowOff();
         }
 
         private void TriggerEnter(Collider obj)
         {
-            if (!_hasAggroTarget)
+            /*if (!_hasAggroTarget)
             {
                 _hasAggroTarget = true;
                 
                 StopAggroCoroutine();
 
                 SwitchFollowOn();
-            }
+            }*/
+            
+            SwitchFollowOn();
         }
 
-        private void TriggerExit(Collider obj)
+        /*private void TriggerExit(Collider obj)
         {
             if (_hasAggroTarget)
             {
                 _hasAggroTarget = false;
                 _aggroCoroutine = StartCoroutine(SwitchFollowOffAfterCooldown());
             }
-        }
+        }*/
 
-        private IEnumerator SwitchFollowOffAfterCooldown()
+        /*private IEnumerator SwitchFollowOffAfterCooldown()
         {
             yield return new WaitForSeconds(Cooldown);
             SwitchFollowOff();
-        }
+        }*/
 
-        private void StopAggroCoroutine()
+        /*private void StopAggroCoroutine()
         {
             if (_aggroCoroutine != null)
             {
                 StopCoroutine(_aggroCoroutine);
                 _aggroCoroutine = null;
             }
-        }
+        }*/
 
         private void SwitchFollowOn() =>
             Follow.enabled = true;

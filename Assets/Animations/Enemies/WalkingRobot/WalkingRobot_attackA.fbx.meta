@@ -106,27 +106,17 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.70403004
-        functionName: AttackColliderOn
+      - time: 0.6945701
+        functionName: OnAttack
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2bf39a10188218942bfd7ced0b1639d1,
-          type: 3}
+        objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.71029407
-        functionName: Trail_1_On
+      - time: 0.95770395
+        functionName: OnAttackEnded
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 10ffb6eda5708484abbaef9a933f5774,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.7355162
-        functionName: AttackColliderOff
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2bf39a10188218942bfd7ced0b1639d1,
-          type: 3}
+        objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -159,27 +149,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.46825194
-        functionName: AttackColliderOn
+      - time: 0.46525687
+        functionName: OnAttack
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2bf39a10188218942bfd7ced0b1639d1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.48503456
-        functionName: Trail_2_On
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 10ffb6eda5708484abbaef9a933f5774,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.52649397
-        functionName: AttackColliderOff
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2bf39a10188218942bfd7ced0b1639d1,
-          type: 3}
+        objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -212,43 +185,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.120772175
-        functionName: AttackColliderOn
+      - time: 0.1299094
+        functionName: OnAttack
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2bf39a10188218942bfd7ced0b1639d1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.15077844
-        functionName: ShockWaveOn
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 10ffb6eda5708484abbaef9a933f5774,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.15670915
-        functionName: UpdateRotationOff
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2e538c29b9eb52d4d80bdeec2808a25f,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.19060723
-        functionName: AttackColliderOff
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2bf39a10188218942bfd7ced0b1639d1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.9061835
-        functionName: UpdateRotationOn
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 2e538c29b9eb52d4d80bdeec2808a25f,
-          type: 3}
+        objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

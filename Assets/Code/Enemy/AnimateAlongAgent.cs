@@ -9,7 +9,7 @@ namespace Code.Enemy
     [RequireComponent(typeof(EnemyAnimator))]
     public class AnimateAlongAgent : MonoBehaviour
     {
-        private const float MinimalVelocity = 0.1f;
+        private const float MinimalVelocity = 0.3f;
 
         public NavMeshAgent Agent;
         public EnemyAnimator EnemyAnimator;
@@ -29,14 +29,14 @@ namespace Code.Enemy
 
             CalculateVelocity(worldDeltaPosition);
 
-            if (ShouldMove())
-                EnemyAnimator.Move(_velocity.x, _velocity.y);
-            else
-                EnemyAnimator.StopMoving();
-
             // Pull character towards agent
             if (worldDeltaPosition.magnitude > Agent.radius)
                 Agent.nextPosition = transform.position + 0.2f * worldDeltaPosition;
+            
+            if (ShouldMove())
+                EnemyAnimator.Move(_velocity.x, _velocity.y);
+            
+            EnemyAnimator.SetDistanceToTarget(Agent.remainingDistance);
 
             EnemyAnimator.PlayGrounding(IsOnGround());
         }
