@@ -1,8 +1,9 @@
-using System;
 using System.Linq;
 using Code.Infrastructure.Factory;
 using Code.Infrastructure.Services;
+using Code.Logic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Code.Enemy
 {
@@ -10,14 +11,16 @@ namespace Code.Enemy
     public class Attack : MonoBehaviour
     {
         public EnemyAnimator EnemyAnimator;
+        public NavMeshAgent Agent;
         public float AttackCooldown = 3f;
         public float Cleavage = 0.5f;
         public float EffectiveDistance = 0.5f;
+        public float Damage = 10f;
 
         private IGameFactory _gameFactory;
         private Transform _heroTransform;
         private Collider[] _hits = new Collider[1];
-        
+
         private float _attackCooldown;
         private bool _isAttacking;
         private int _layerMask;
@@ -40,16 +43,25 @@ namespace Code.Enemy
                 StartAttack();
         }
 
+        private void OnAttackStarted()
+        {
+            Agent.updateRotation = false;
+        }
+
         private void OnAttack()
         {
             if (Hit(out Collider hit))
             {
                 PhysicsDebug.DrawDebug(StartPoint(), Cleavage, 1);
+                hit.transform.GetComponent<IHealth>().TakeDamage(Damage); 
             }
         }
 
-        private void OnAttackEnded() => 
+        private void OnAttackEnded()
+        {
             _isAttacking = false;
+            Agent.updateRotation = true;
+        }
 
         public void EnableAttack() => 
             _attackIsActive = true;

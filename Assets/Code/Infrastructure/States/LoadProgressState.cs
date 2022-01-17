@@ -1,6 +1,7 @@
 using Code.Data;
 using Code.Infrastructure.Services.PersistentProgress;
 using Code.Infrastructure.Services.SaveLoad;
+using UnityEngine;
 
 namespace Code.Infrastructure.States
 {
@@ -33,7 +34,16 @@ namespace Code.Infrastructure.States
                 _saveLoadService.LoadProgress()
                 ?? NewProgress();
 
-        private PlayerProgress NewProgress() => 
-            new PlayerProgress("BattleScene");
+        private PlayerProgress NewProgress()
+        {
+            var playerProgress = new PlayerProgress("BattleScene");
+
+            playerProgress.HeroState.MaxHP = 60f;
+            playerProgress.HeroStats.Damage = 1f;
+            playerProgress.HeroStats.DamageRadius = 0.5f;
+            playerProgress.HeroState.ResetHP();
+
+            return playerProgress;
+        }
     }
 }

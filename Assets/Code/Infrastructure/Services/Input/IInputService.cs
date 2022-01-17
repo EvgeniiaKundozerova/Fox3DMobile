@@ -6,7 +6,7 @@ namespace Code.Infrastructure.Services.Input
     {
         Vector2 Axis { get; }
 
-        bool IsMeleeAttackButtonUp();
-        bool IsRangeAttackButtonUp();
+        bool MeleeAttackButtonUp();
+        bool RangeAttackButtonUp();
     }
 }

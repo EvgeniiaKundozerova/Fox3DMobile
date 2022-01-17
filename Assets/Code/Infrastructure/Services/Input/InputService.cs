@@ -11,10 +11,10 @@ namespace Code.Infrastructure.Services.Input
 
         public abstract Vector2 Axis { get; }
 
-        public bool IsMeleeAttackButtonUp() => 
+        public bool MeleeAttackButtonUp() => 
             SimpleInput.GetButtonUp(MeleeAttackButton);
 
-        public bool IsRangeAttackButtonUp() => 
+        public bool RangeAttackButtonUp() => 
             SimpleInput.GetButtonUp(RangeAttackButton);
 
         protected static Vector2 SimpleInputAxis() => 
