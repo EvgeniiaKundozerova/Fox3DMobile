@@ -13,6 +13,8 @@ namespace Code.Enemy
 
         public GameObject DeathFx;
         public float DeathFxSpawnHeight;
+        public float DestroyTime;
+        
         private Vector3 _deathFxSpawnPoint;
 
         public event Action Happened;
@@ -45,7 +47,7 @@ namespace Code.Enemy
 
         private IEnumerator DestroyTimer()
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(DestroyTime);
             SpawnDeathFx();
             Destroy(gameObject);
         }
