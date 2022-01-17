@@ -108,15 +108,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.25
+    agentRadius: 0.35
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.2
+    agentClimb: 0.33
     ledgeDropHeight: 2
-    maxJumpAcrossDistance: 0
+    maxJumpAcrossDistance: 4
     minRegionArea: 1
     manualCellSize: 0
-    cellSize: 0.083333336
+    cellSize: 0.11666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 1
@@ -262,6 +262,44 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1370312256, guid: 64e8688e04dc401428e0760677a03f88, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790614079, guid: 64e8688e04dc401428e0760677a03f88, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964477085763460, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964477218094695, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964477402432949, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964477528847687, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964477607779729, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964477716258029, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267964478292645636, guid: 64e8688e04dc401428e0760677a03f88,
         type: 3}
       propertyPath: m_Name
@@ -321,6 +359,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964478317306049, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267964478385893169, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113777148107061290, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113777148107061290, guid: 64e8688e04dc401428e0760677a03f88,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e8688e04dc401428e0760677a03f88, type: 3}
@@ -431,30 +489,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2677605235565526256, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
-        type: 3}
-      propertyPath: DestroyTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
-        type: 3}
-      propertyPath: m_WalkableMask
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5153702685293124718, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
       propertyPath: m_Name
       value: WalkingRobotPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372552796326129249, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 8205268875005750909, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
