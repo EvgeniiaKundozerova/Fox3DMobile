@@ -85,7 +85,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -116,9 +116,9 @@ CapsuleCollider:
   m_GameObject: {fileID: 6672053413694211643}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 4.67
+  m_Height: 17.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!21 &-8417864748227607106

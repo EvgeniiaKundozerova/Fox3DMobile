@@ -431,6 +431,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 43309214, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27, type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: m_AutoTraverseOffMeshLink
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5153702685293124718, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
       propertyPath: m_Name
