@@ -35,8 +35,6 @@ namespace Code.Enemy
             
             if (ShouldMove())
                 EnemyAnimator.Move(_velocity.x, _velocity.y);
-            
-            EnemyAnimator.SetDistanceToTarget(Agent.remainingDistance);
 
             EnemyAnimator.PlayGrounding(IsOnGround());
         }

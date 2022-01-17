@@ -40,6 +40,5 @@ namespace Code.Enemy
         public void PlayAttack() => _animator.SetTrigger(Attack);
 
         public void PlayGrounding(bool onGround) => _animator.SetBool(OnGround, onGround);
-        public void SetAttack(bool attackIsActive) => _animator.SetBool(AttackIsActive, attackIsActive);
     }
 }

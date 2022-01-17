@@ -66,7 +66,6 @@ namespace Code.Enemy
         public void EnableAttack()
         {
             _attackIsActive = true;
-            EnemyAnimator.SetAttack(_attackIsActive);
             SwitchPatrolOff();
         }
 

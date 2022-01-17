@@ -1760,6 +1760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Agent: {fileID: 4530103725004689843}
+  EnemyAnimator: {fileID: 8922612348787779675}
 --- !u!114 &5218393890927379392
 MonoBehaviour:
   m_ObjectHideFlags: 0

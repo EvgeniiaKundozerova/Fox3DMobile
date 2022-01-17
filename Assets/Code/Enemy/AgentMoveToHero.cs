@@ -6,11 +6,13 @@ using UnityEngine.AI;
 
 namespace Code.Enemy
 {
+    [RequireComponent(typeof(EnemyAnimator), typeof(NavMeshAgent))]
     public class AgentMoveToHero : Follow
     {
         private const float MinimalDistance = 3f;
 
         public NavMeshAgent Agent;
+        public EnemyAnimator EnemyAnimator;
 
         private Transform _heroTransform;
         private IGameFactory _gameFactory;
@@ -29,6 +31,8 @@ namespace Code.Enemy
         {
             if (Initialized() && HeroNotReached())
                 Agent.destination = _heroTransform.position;
+            
+            EnemyAnimator.SetDistanceToTarget(DistanceToTarget());
         }
 
         private void InitializeHeroTransform() => 
