@@ -108,15 +108,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.35
+    agentRadius: 0.25
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.2
     ledgeDropHeight: 2
-    maxJumpAcrossDistance: 4
+    maxJumpAcrossDistance: 0
     minRegionArea: 1
-    manualCellSize: 1
-    cellSize: 0.05
+    manualCellSize: 0
+    cellSize: 0.083333336
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 1
@@ -431,24 +431,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 43309214, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27, type: 3}
+    - target: {fileID: 2677605235565526256, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: DestroyTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
       propertyPath: m_Radius
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
       propertyPath: m_WalkableMask
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
-        type: 3}
-      propertyPath: m_AutoTraverseOffMeshLink
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5153702685293124718, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
       propertyPath: m_Name
       value: WalkingRobotPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372552796326129249, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 8205268875005750909, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
@@ -750,6 +756,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 5233320842579188670, guid: d14732deef4d43e4a8138d0f3f4162d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270824636554600537, guid: d14732deef4d43e4a8138d0f3f4162d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5339910016584085321, guid: d14732deef4d43e4a8138d0f3f4162d5,
         type: 3}
       propertyPath: m_RootOrder
@@ -805,10 +821,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8404094989728408852, guid: d14732deef4d43e4a8138d0f3f4162d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8404094989728408874, guid: d14732deef4d43e4a8138d0f3f4162d5,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404094989728408876, guid: d14732deef4d43e4a8138d0f3f4162d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545652697607554149, guid: d14732deef4d43e4a8138d0f3f4162d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192674065895465827, guid: d14732deef4d43e4a8138d0f3f4162d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.200001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14732deef4d43e4a8138d0f3f4162d5, type: 3}
