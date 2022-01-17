@@ -12,11 +12,14 @@ namespace Code.Enemy
         public Follow Follow;
 
         public GameObject DeathFx;
+        public float DeathFxSpawnHeight;
+        private Vector3 _deathFxSpawnPoint;
 
         public event Action Happened;
-
-        private void Start() => 
+        private void Start()
+        {
             EnemyHealth.HealthChanged += HealthChanged;
+        }
 
         private void OnDestroy() => 
             EnemyHealth.HealthChanged -= HealthChanged;
@@ -42,15 +45,18 @@ namespace Code.Enemy
 
         private IEnumerator DestroyTimer()
         {
-            yield return new WaitForSeconds(3);
-            SpawmDeathFx();
+            yield return new WaitForSeconds(1);
+            SpawnDeathFx();
             Destroy(gameObject);
         }
 
         private void SwitchFollowOff() =>
             Follow.enabled = false;
 
-        private void SpawmDeathFx() => 
-            Instantiate(DeathFx, transform.position, Quaternion.identity);
+        private void SpawnDeathFx()
+        {
+            _deathFxSpawnPoint = new Vector3(transform.position.x, transform.position.y + DeathFxSpawnHeight, transform.position.z);
+            Instantiate(DeathFx, _deathFxSpawnPoint, Quaternion.identity);
+        }
     }
 }

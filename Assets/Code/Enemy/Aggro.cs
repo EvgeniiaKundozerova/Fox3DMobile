@@ -7,9 +7,9 @@ namespace Code.Enemy
     {
         public TriggerObserver TriggerObserver;
         public Follow Follow;
-        
-        private Coroutine _aggroCoroutine;
-        private bool _hasAggroTarget;
+        public EnemyAnimator EnemyAnimator;
+
+        private bool _isAlerted;
 
         private void Start()
         {
@@ -20,9 +20,14 @@ namespace Code.Enemy
 
         private void TriggerEnter(Collider obj)
         {
+            if (!_isAlerted)
+            {
+                EnemyAnimator.PlayAlert();
+                _isAlerted = true;
+            }
+            
             SwitchFollowOn();
         }
-
 
         private void SwitchFollowOn() =>
             Follow.enabled = true;

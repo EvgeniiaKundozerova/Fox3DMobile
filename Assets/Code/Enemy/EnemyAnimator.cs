@@ -12,17 +12,18 @@ namespace Code.Enemy
         private static readonly int VelocityX = Animator.StringToHash("VelX");
         private static readonly int VelocityY = Animator.StringToHash("VelY");
         private static readonly int OnGround = Animator.StringToHash("OnGround");
-        private static readonly int AttackIsActive = Animator.StringToHash("AttackIsActive");
+        private static readonly int Alert = Animator.StringToHash("Alert");
 
         private Animator _animator;
 
-        private void Awake()
-        {
+        private void Awake() => 
             _animator = GetComponent<Animator>();
-        }
 
         public void PlayHit() => _animator.SetTrigger(Hit);
-        public void PlayDeath() => _animator.SetTrigger(Death);
+        public void PlayDeath() => _animator.SetBool(Death, true);
+        public void PlayAttack() => _animator.SetTrigger(Attack);
+        public void PlayAlert() => _animator.SetTrigger(Alert);
+        public void PlayGrounding(bool onGround) => _animator.SetBool(OnGround, onGround);
 
         public void Move(float velocityX, float velocityY)
         {
@@ -34,11 +35,8 @@ namespace Code.Enemy
         {
             _animator.SetFloat(DistanceToTarget, distance);
         }
-        
+
         public Vector3 RootPosition() => 
             _animator.rootPosition;
-        public void PlayAttack() => _animator.SetTrigger(Attack);
-
-        public void PlayGrounding(bool onGround) => _animator.SetBool(OnGround, onGround);
     }
 }

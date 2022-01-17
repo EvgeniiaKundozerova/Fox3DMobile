@@ -1804,6 +1804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerObserver: {fileID: 6887720535575672543}
   Follow: {fileID: 6043810107642644377}
+  EnemyAnimator: {fileID: 8922612348787779675}
 --- !u!114 &8877062483210718508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1867,6 +1868,7 @@ MonoBehaviour:
   EnemyAnimator: {fileID: 8922612348787779675}
   Follow: {fileID: 6043810107642644377}
   DeathFx: {fileID: 8192484453284452642, guid: 8174b6acce8ae2c4c84df819d46fb14b, type: 3}
+  DeathFxSpawnHeight: 1.5
 --- !u!114 &2991867573005463330
 MonoBehaviour:
   m_ObjectHideFlags: 0
