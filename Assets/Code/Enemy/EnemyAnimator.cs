@@ -12,6 +12,7 @@ namespace Code.Enemy
         private static readonly int VelocityX = Animator.StringToHash("VelX");
         private static readonly int VelocityY = Animator.StringToHash("VelY");
         private static readonly int OnGround = Animator.StringToHash("OnGround");
+        private static readonly int AttackIsActive = Animator.StringToHash("AttackIsActive");
 
         private Animator _animator;
 
@@ -39,5 +40,6 @@ namespace Code.Enemy
         public void PlayAttack() => _animator.SetTrigger(Attack);
 
         public void PlayGrounding(bool onGround) => _animator.SetBool(OnGround, onGround);
+        public void SetAttack(bool attackIsActive) => _animator.SetBool(AttackIsActive, attackIsActive);
     }
 }

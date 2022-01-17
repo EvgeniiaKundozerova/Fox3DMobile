@@ -1649,6 +1649,7 @@ GameObject:
   - component: {fileID: 6675314652823288529}
   - component: {fileID: 2677605235565526256}
   - component: {fileID: 2991867573005463330}
+  - component: {fileID: 3665848471145783226}
   m_Layer: 0
   m_Name: WalkingRobotPrefab
   m_TagString: Untagged
@@ -1802,7 +1803,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerObserver: {fileID: 6887720535575672543}
   Follow: {fileID: 6043810107642644377}
-  Cooldown: 3
 --- !u!114 &8877062483210718508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,7 +1817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyAnimator: {fileID: 8922612348787779675}
   Agent: {fileID: 4530103725004689843}
-  AttackCooldown: 3
+  Patrol: {fileID: 3665848471145783226}
   Cleavage: 1
   EffectiveDistance: 1.3
   Damage: 10
@@ -1879,6 +1879,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HpBar: {fileID: 2311755372551771151}
+--- !u!114 &3665848471145783226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5153702685293124718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda413e82efd4f2bb8dc7c844fb2c1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Agent: {fileID: 4530103725004689843}
+  Radius: 4
 --- !u!1 &5247341797531105544
 GameObject:
   m_ObjectHideFlags: 0

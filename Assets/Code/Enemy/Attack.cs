@@ -7,12 +7,13 @@ using UnityEngine.AI;
 
 namespace Code.Enemy
 {
-    [RequireComponent(typeof(EnemyAnimator))]
+    [RequireComponent(typeof(EnemyAnimator), typeof(NavMeshAgent), typeof(PatrolWithSpawnSpots))]
     public class Attack : MonoBehaviour
     {
         public EnemyAnimator EnemyAnimator;
         public NavMeshAgent Agent;
-        public float AttackCooldown = 3f;
+        public PatrolWithSpawnSpots Patrol;
+        
         public float Cleavage = 0.5f;
         public float EffectiveDistance = 0.5f;
         public float Damage = 10f;
@@ -21,9 +22,8 @@ namespace Code.Enemy
         private Transform _heroTransform;
         private Collider[] _hits = new Collider[1];
 
-        private float _attackCooldown;
-        private bool _isAttacking;
         private int _layerMask;
+        private bool _isAttacking;
         private bool _attackIsActive;
 
         private void Awake()
@@ -63,8 +63,12 @@ namespace Code.Enemy
             Agent.updateRotation = true;
         }
 
-        public void EnableAttack() => 
+        public void EnableAttack()
+        {
             _attackIsActive = true;
+            EnemyAnimator.SetAttack(_attackIsActive);
+            SwitchPatrolOff();
+        }
 
         public void DisableAttack() => 
             _attackIsActive = false;
@@ -90,5 +94,8 @@ namespace Code.Enemy
 
         private void OnHeroCreated() =>
             _heroTransform = _gameFactory.HeroGameObject.transform;
+        
+        private void SwitchPatrolOff() =>
+            Patrol.enabled = false;
     }
 }
