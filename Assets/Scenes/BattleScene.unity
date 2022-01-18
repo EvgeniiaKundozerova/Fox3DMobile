@@ -489,10 +489,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4530103725004689843, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 5153702685293124718, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}
       propertyPath: m_Name
       value: WalkingRobotPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372552796326129249, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 8205268875005750909, guid: 3150ff9c48a8fd34c8ebf8d0d1db9f27,
         type: 3}

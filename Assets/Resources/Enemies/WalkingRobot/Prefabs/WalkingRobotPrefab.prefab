@@ -930,6 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6227311913001297766}
+  - component: {fileID: 1087139838199687473}
   m_Layer: 0
   m_Name: leg_L_4
   m_TagString: Untagged
@@ -951,6 +952,19 @@ Transform:
   m_Father: {fileID: 1906520541675363063}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087139838199687473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805832264389051154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f140359540804482ae3a99d2b1888f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.15
 --- !u!1 &3091647562720827637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6223402966798736423}
+  - component: {fileID: 1434240374212119616}
   m_Layer: 0
   m_Name: leg_R_4
   m_TagString: Untagged
@@ -1362,6 +1377,19 @@ Transform:
   m_Father: {fileID: 5179937959893558286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1434240374212119616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311675619894710189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f140359540804482ae3a99d2b1888f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.15
 --- !u!1 &4351683304103679409
 GameObject:
   m_ObjectHideFlags: 0
