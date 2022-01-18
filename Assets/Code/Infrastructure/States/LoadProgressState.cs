@@ -39,7 +39,7 @@ namespace Code.Infrastructure.States
             var playerProgress = new PlayerProgress("BattleScene");
 
             playerProgress.HeroState.MaxHP = 60f;
-            playerProgress.HeroStats.Damage = 1f;
+            playerProgress.HeroStats.Damage = 1.5f;
             playerProgress.HeroStats.DamageRadius = 0.5f;
             playerProgress.HeroState.ResetHP();
 
