@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Code.Hero
@@ -9,8 +9,10 @@ namespace Code.Hero
         public HeroMove HeroMove;
         public HeroAttack HeroAttack;
         public HeroAnimator HeroAnimator;
-
         public GameObject DeathFx;
+
+        public float DestroyTime;
+        
         private bool _isDead;
 
         private void Start() =>
@@ -33,7 +35,14 @@ namespace Code.Hero
             HeroAttack.enabled = false;
             HeroAnimator.PlayDeath();
 
+            StartCoroutine(DestroyTimer());
+        }
+        
+        private IEnumerator DestroyTimer()
+        {
+            yield return new WaitForSeconds(DestroyTime);
             Instantiate(DeathFx, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

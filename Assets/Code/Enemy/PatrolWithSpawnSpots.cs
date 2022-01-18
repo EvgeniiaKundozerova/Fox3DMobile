@@ -4,7 +4,7 @@ using UnityEngine.AI;
 namespace Code.Enemy
 {
     [RequireComponent(typeof(NavMeshAgent))]
-    public class PatrolWithSpawnSpots : MonoBehaviour
+    public class PatrolWithSpawnSpots : Patrol
     {
         private const float MinimalDistance = 0.5f;
         

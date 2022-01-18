@@ -744,6 +744,7 @@ MonoBehaviour:
   HeroAttack: {fileID: 2772241520095751093}
   HeroAnimator: {fileID: 6456124310058497778}
   DeathFx: {fileID: 100006, guid: 2a474af3f4c27be4e9bdce39cfe4315d, type: 3}
+  DestroyTime: 0.1
 --- !u!114 &2772241520095751093
 MonoBehaviour:
   m_ObjectHideFlags: 0

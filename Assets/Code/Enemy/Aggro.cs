@@ -1,5 +1,5 @@
-using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Code.Enemy
 {
@@ -7,7 +7,9 @@ namespace Code.Enemy
     {
         public TriggerObserver TriggerObserver;
         public Follow Follow;
+        public Patrol Patrol;
         public EnemyAnimator EnemyAnimator;
+        public NavMeshAgent Agent;
 
         private bool _isAlerted;
 
@@ -25,8 +27,19 @@ namespace Code.Enemy
                 EnemyAnimator.PlayAlert();
                 _isAlerted = true;
             }
-            
+
+            SwitchPatrolOff();
             SwitchFollowOn();
+        }
+
+        public void OnAlertStart()
+        {
+            Agent.updateRotation = false;
+        }
+
+        public void OnAlertEnd()
+        {
+            Agent.updateRotation = true;
         }
 
         private void SwitchFollowOn() =>
@@ -34,5 +47,8 @@ namespace Code.Enemy
 
         private void SwitchFollowOff() =>
             Follow.enabled = false;
+        
+        private void SwitchPatrolOff() =>
+            Patrol.enabled = false;
     }
 }

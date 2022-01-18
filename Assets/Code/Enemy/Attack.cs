@@ -12,7 +12,6 @@ namespace Code.Enemy
     {
         public EnemyAnimator EnemyAnimator;
         public NavMeshAgent Agent;
-        public PatrolWithSpawnSpots Patrol;
         
         public float Cleavage = 0.5f;
         public float EffectiveDistance = 0.5f;
@@ -66,7 +65,6 @@ namespace Code.Enemy
         public void EnableAttack()
         {
             _attackIsActive = true;
-            SwitchPatrolOff();
         }
 
         public void DisableAttack() => 
@@ -89,12 +87,9 @@ namespace Code.Enemy
         }
 
         private bool CanAttack() =>
-            !_isAttacking && _attackIsActive;
+            !_isAttacking && _attackIsActive && _heroTransform != null;
 
         private void OnHeroCreated() =>
             _heroTransform = _gameFactory.HeroGameObject.transform;
-        
-        private void SwitchPatrolOff() =>
-            Patrol.enabled = false;
     }
 }
