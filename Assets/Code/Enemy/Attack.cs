@@ -7,7 +7,7 @@ using UnityEngine.AI;
 
 namespace Code.Enemy
 {
-    [RequireComponent(typeof(EnemyAnimator), typeof(NavMeshAgent), typeof(PatrolWithSpawnSpots))]
+    [RequireComponent(typeof(EnemyAnimator), typeof(NavMeshAgent))]
     public class Attack : MonoBehaviour
     {
         public EnemyAnimator EnemyAnimator;

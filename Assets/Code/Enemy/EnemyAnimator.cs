@@ -31,10 +31,8 @@ namespace Code.Enemy
             _animator.SetFloat(VelocityY, velocityY);
         }
 
-        public void SetDistanceToTarget(float distance)
-        {
+        public void SetDistanceToTarget(float distance) => 
             _animator.SetFloat(DistanceToTarget, distance);
-        }
 
         public Vector3 RootPosition() => 
             _animator.rootPosition;

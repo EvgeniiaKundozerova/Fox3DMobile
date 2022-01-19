@@ -7,7 +7,6 @@ using UnityEngine;
 public class HeroAnimator : MonoBehaviour
 {
     private static readonly int Run = Animator.StringToHash("Run");
-    //private static readonly int TIPAngle = Animator.StringToHash("TIPAngle");
     private static readonly int AttackMelee = Animator.StringToHash("AttackMelee");
     private static readonly int Hit = Animator.StringToHash("Hit");
     private static readonly int Death = Animator.StringToHash("Death");

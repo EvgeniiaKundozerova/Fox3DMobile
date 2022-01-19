@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Threading;
 using Code.Infrastructure.AssetManagement;
 using Code.Infrastructure.Services.PersistentProgress;
 using UnityEngine;
